@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #D9D9D9; /* Light gray background for the body */
+    color: #2c3e50; /* Dark gray for general text */
+}
+
+/* Header/Navbar */
+.navbar {
+    background-color: #E36397 !important; /* Vibrant pink background for navbar */
+}
+
+.navbar-brand {
+    font-size: 2rem; /* Increase text size for the navbar */
+    color: #fff; /* White text color */
+}
+
+.navbar-brand i {
+    font-size: 2.5rem; /* Increase the paw icon size */
+    margin-right: 10px; /* Add space between the icon and the text */
+}
+
+/* Vertical Pills Navigation */
+#v-pills-tab {
+    padding-left: 0;
+    border-right: 2px solid #BDB4BF; /* Light gray border for the nav */
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+    color: #2c3e50; /* Dark gray text for links */
+    background-color: #EFF2EF; /* Very light grayish-green for link background */
+}
+
+.nav-pills .nav-link.active {
+    background-color: #E36397; /* Vibrant pink for active link */
+    color: white; /* White text when active */
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #BC8DA7; /* Muted purple-pink background on hover */
+    color: white; /* White text when hovered */
+}
+
+/* Tab Content Padding */
+.tab-content {
+    padding: 20px;
+    background-color: #EFF2EF; /* Very light grayish-green background for content areas */
+    border-radius: 8px; /* Slight rounded corners for content sections */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for content sections */
+}
+
+/* Hero Section */
+h1.display-4 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50; /* Dark gray/blue text */
+}
+
+p.lead {
+    font-size: 1.25rem;
+    color: #34495e; /* Medium gray/blue for paragraph text */
+}
+
+/* Footer */
+footer {
+    background-color: #E36397 !important; /* Vibrant pink for footer */
+    color: #ecf0f1; /* Light gray text color */
+    padding: 20px;
+}
+
+footer a {
+    color: #BC8DA7; /* Muted purple-pink for links in footer */
+}
+
+footer a:hover {
+    color: #E36397; /* Vibrant pink when links are hovered */
+}
+
+/* Links */
+a {
+    color: #E36397; /* Vibrant pink for general links */
+}
+
+a:hover {
+    color: #BC8DA7; /* Muted purple-pink on hover */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #E36397; /* Vibrant pink background for primary buttons */
+    border-color: #E36397; /* Border color matches the background */
+    color: #fff; /* White text color */
+}
+
+.btn-primary:hover {
+    background-color: #BC8DA7; /* Muted purple-pink for hover state */
+    border-color: #BC8DA7; /* Border color for hover state */
+}
+
+.btn-lg {
+    padding: 10px 20px; /* Ensure the button remains large */
+    font-size: 1.2rem; /* Larger font size for the button */
+}
