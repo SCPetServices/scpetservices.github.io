@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="display-4 text-center">Contact Us</h1>
+    <p class="lead text-center mb-5">We'd love to hear from you! Reach out to us using the contact information below.</p>
+
+    <!-- Contact Information Section -->
+    <div class="row">
+        <!-- Contact Person's Name -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa fa-user fa-lg"></i> Contact Person</h5>
+                    <p class="card-text">
+                        <strong>Name:</strong> Jane Doe
+                    </p>
+                    <p class="card-text">
+                        Feel free to call, text, or email me if you are interested in my services.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa fa-phone fa-lg"></i> Phone</h5>
+                    <p class="card-text">
+                        <strong>Phone Number:</strong> (123) 456-7890
+                    </p>
+                    <p class="card-text">
+                        I'm available Monday to Friday, 9 AM - 5 PM.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Address -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa fa-envelope fa-lg"></i> Email</h5>
+                    <p class="card-text">
+                        <strong>Email:</strong> contact@dogwalkingservices.com
+                    </p>
+                    <p class="card-text">
+                        I usually reply within 24 hours. Feel free to drop me an email anytime!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    Address
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa fa-map-marker-alt fa-lg"></i> Address</h5>
+                    <p class="card-text">
+                        <strong>Our Office:</strong> 1234 Walk Street, Dogtown, USA
+                    </p>
+                    <p class="card-text">
+                        Feel free to stop by my office during business hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
