@@ -11,17 +11,17 @@ body {
 .site-title {
     font-family: 'Bree Serif', serif;
     font-size: 2.5rem;
-    color: #1d73b9;
+    color: #2297c9;
 }
 
 .site-title .fas {
-    color: #1d73b9;
+    color: #2297c9;
     margin-right: 8px;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to bottom right, #1d73b9, #145a8e);
+    background: linear-gradient(to bottom right, #2297c9, #145a8e);
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -50,16 +50,6 @@ body {
     animation: bounce 1.5s infinite;
 }
 
-/* Bounce Animation */
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
 /* Navigation */
 .nav-pills .nav-link {
     font-family: 'Roboto', sans-serif;
@@ -72,7 +62,7 @@ body {
 }
 
 .nav-pills .nav-link.active {
-    background-color: #1d73b9;
+    background-color: #2297c9;
     color: white;
 }
 
@@ -94,7 +84,7 @@ body {
 /* Headers */
 h2, h3 {
     font-family: 'Bree Serif', serif;
-    color: #1d73b9;
+    color: #2297c9;
     margin-bottom: 15px;
     font-size: 2rem;
     text-align: center;
