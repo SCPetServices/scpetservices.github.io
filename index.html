@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Carlos Pet Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;500&family=Pacifico&family=Amatic+SC:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1><i class="fas fa-paw hero-icon me-3"></i>Welcome to SC Pet Services</h1>
+        <p>Your trusted partner for dog walking and pet care in San Carlos. Let us treat your furry friends like family.</p>
+    </div>
+
+    <main class="container my-4">
+        <div class="row">
+            <!-- Vertical Tabs -->
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+                    <button class="nav-link" id="v-pills-services-tab" data-bs-toggle="pill" data-bs-target="#v-pills-services" type="button" role="tab" aria-controls="v-pills-services" aria-selected="false">Services</button>
+                    <button class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contact</button>
+                </div>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- Home Section -->
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <h2>Welcome to SC Pet Services</h2>
+                        <p>Your trusted partner for dog walking and pet care in San Carlos.</p>
+                        <h3>About Us</h3>
+                        <p>We are passionate pet lovers dedicated to providing top-notch care for your furry friends. Our team ensures your pets are happy, healthy, and well-cared for, treating them like family.</p>
+                    </div>
+
+                    <!-- Services Section -->
+                    <div class="tab-pane fade" id="v-pills-services" role="tabpanel" aria-labelledby="v-pills-services-tab">
+                        <h2>Our Services</h2>
+                        <div class="service-item mb-3">
+                            <h4>Daily Dog Walking</h4>
+                            <p><strong>Price:</strong> $25 per walk (1 hour)</p>
+                            <p>Let us take your dog for a walk while you focus on your day! Our professional walkers ensure your dog gets the exercise and attention they need.</p>
+                        </div>
+                        <div class="service-item mb-3">
+                            <h4>Pet Sitting</h4>
+                            <p><strong>Price:</strong> $50 per day</p>
+                            <p>Whether you’re away for the day or on vacation, our pet sitting service ensures your pet is cared for in the comfort of their own home.</p>
+                        </div>
+                        <div class="service-item mb-3">
+                            <h4>Grooming Assistance</h4>
+                            <p><strong>Price:</strong> Starting at $40</p>
+                            <p>We provide assistance with basic grooming needs, such as brushing and bathing. Our team ensures your pet stays clean and healthy.</p>
+                        </div>
+                        <div class="service-item mb-3">
+                            <h4>Training Walks</h4>
+                            <p><strong>Price:</strong> $35 per session</p>
+                            <p>Help your dog improve their behavior and learn new skills. Our training walks combine training and exercise to help your dog learn while having fun!</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Section -->
+                    <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">
+                        <h2>Contact Us</h2>
+                        <p><i class="fas fa-envelope me-2"></i>Email: <a href="mailto:info@sancarlospetservices.com">info@sancarlospetservices.com</a></p>
+                        <p><i class="fas fa-phone me-2"></i>Phone: <a href="tel:+15555555555">(555) 555-5555</a></p>
+                        <p>We'd love to hear from you! Reach out to schedule a service or ask us any questions about your pet's care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
