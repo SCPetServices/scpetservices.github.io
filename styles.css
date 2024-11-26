@@ -299,6 +299,8 @@ li:hover {
 
     .smaller-nav {
         width: 100% !important; /* Ensure nav container takes full width */
+        max-width: none !important; /* Remove any max-width restrictions */
+        margin-right: 0 !important; /* Reset any margin on smaller screens */
     }
 
     .nav-pills .nav-link {
@@ -361,6 +363,8 @@ li:hover {
 
     .smaller-nav {
         width: 100% !important; /* Ensure nav container takes full width */
+        max-width: none !important; /* Remove any max-width restrictions */
+        margin-right: 0 !important; /* Reset any margin on smaller screens */
     }
 
     .nav-pills {
