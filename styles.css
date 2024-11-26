@@ -352,16 +352,20 @@ li:hover {
     }
 
     .nav-pills {
-        text-align: center;
-        display: block; /* Stack vertically on mobile */
-        width: 100%; /* Ensure tabs take full width */
+        text-align: center; /* Ensure it's centered */
+        display: flex; /* Use flexbox for centering */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        justify-content: center; /* Center the nav pills horizontally */
+        padding: 0; /* Remove any default padding */
+        width: 100%; /* Make sure the nav pills take full width */
     }
 
     .nav-pills .nav-link {
-        text-align: center;
+        text-align: center; /* Ensure text is centered in each pill */
         font-size: 0.9rem;
-        padding: 12px 0; /* Make tabs bigger for easier clicking */
-        margin: 5px 0;
+        padding: 12px 0; /* Adjust padding for easier clicking */
+        margin: 0 5px; /* Add horizontal space between pills */
+        flex-grow: 1; /* Make the pills grow to fill the width */
     }
 
     .tab-content {
@@ -376,7 +380,7 @@ li:hover {
         font-size: 0.9rem;
     }
 
-     /* Ensure the background image spans the whole screen */
+    /* Ensure the background image spans the whole screen */
     .cover-page {
         height: 100vh; /* Keep full height on mobile */
         background-size: cover;
