@@ -322,6 +322,23 @@ li:hover {
         text-align: center; /* Center align text */
         padding: 10px;
     }
+
+    /* Background adjustments for tablets */
+    .cover-page {
+        background-size: cover;
+        background-position: center top;
+        height: 80vh; /* Adjust height for tablets */
+    }
+
+    .cover-page h1 {
+        font-size: 4.5rem; /* Adjust header size */
+    }
+
+    .cover-page p {
+        font-size: 2rem; /* Adjust the paragraph size */
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 }
 
 /* Mobile Devices */
@@ -341,6 +358,7 @@ li:hover {
     }
 
     .nav-pills .nav-link {
+        text-align: center;
         font-size: 0.9rem;
         padding: 12px 0; /* Make tabs bigger for easier clicking */
         margin: 5px 0;
@@ -356,5 +374,29 @@ li:hover {
 
     .service-item p {
         font-size: 0.9rem;
+    }
+
+     /* Ensure the background image spans the whole screen */
+    .cover-page {
+        height: 100vh; /* Keep full height on mobile */
+        background-size: cover;
+        background-position: center center; /* Adjust positioning */
+    }
+
+    /* Adjust text size */
+    .cover-page h1 {
+        font-size: 3rem; /* Smaller font for smaller screens */
+    }
+
+    .cover-page p {
+        font-size: 1.5rem; /* Adjust the text size */
+        margin-top: 50px;  /* Adjust the top margin */
+        margin-bottom: 50px; /* Adjust the bottom margin */
+    }
+
+    /* Button adjustments for mobile */
+    .cover-page .btn-primary {
+        font-size: 1.5rem; /* Slightly smaller button text */
+        padding: 10px 20px; /* Adjust padding for smaller devices */
     }
 }
