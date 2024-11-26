@@ -4,30 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Carlos Pet Services</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;500&family=Pacifico&family=Amatic+SC:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1><i class="fas fa-paw hero-icon me-3"></i>Welcome to SC Pet Services</h1>
-        <p>Your trusted partner for dog walking and pet care in San Carlos. Let us treat your furry friends like family.</p>
-    </div>
+    <!-- Main Container for Carousel and Tabs -->
+    <div class="container-fluid p-0"> <!-- changed container to container-fluid and removed padding -->
+        <!-- Hero Carousel -->
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
 
-    <main class="container my-4">
-        <div class="row">
-            <!-- Vertical Tabs -->
-            <div class="col-md-3">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-                    <button class="nav-link" id="v-pills-services-tab" data-bs-toggle="pill" data-bs-target="#v-pills-services" type="button" role="tab" aria-controls="v-pills-services" aria-selected="false">Services</button>
-                    <button class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contact</button>
+            <!-- Carousel Content -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero d-flex flex-column align-items-center justify-content-center text-center">
+                        <h1><i class="fas fa-paw hero-icon me-3"></i>Welcome to SC Pet Services</h1>
+                        <p>Your trusted partner for dog walking and pet care in San Carlos. Let us treat your furry friends like family.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero d-flex flex-column align-items-center justify-content-center text-center">
+                        <h1><i class="fas fa-dog hero-icon me-3"></i>Professional Dog Walking</h1>
+                        <p>Ensure your dog gets the exercise they deserve with our experienced dog walkers.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="hero d-flex flex-column align-items-center justify-content-center text-center">
+                        <h1><i class="fas fa-shield-dog hero-icon me-3"></i>Compassionate Pet Sitting</h1>
+                        <p>Relax knowing your pet is in good hands while you're away.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Tab Content -->
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Tab Content Section -->
+        <div class="row">
+            <!-- Tab Navigation (left side) -->
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                    <a class="nav-link" id="v-pills-services-tab" data-bs-toggle="pill" href="#v-pills-services" role="tab" aria-controls="v-pills-services" aria-selected="false">Services</a>
+                    <a class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contact</a>
+                </div>
+            </div>
+
+            <!-- Tab Content (right side) -->
             <div class="col-md-9">
                 <div class="tab-content" id="v-pills-tabContent">
                     <!-- Home Section -->
@@ -36,6 +77,16 @@
                         <p>Your trusted partner for dog walking and pet care in San Carlos.</p>
                         <h3>About Us</h3>
                         <p>We are passionate pet lovers dedicated to providing top-notch care for your furry friends. Our team ensures your pets are happy, healthy, and well-cared for, treating them like family.</p>
+
+                        <!-- Image Section -->
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <img src="static/dog-walking.jpg" alt="Dog Walking" class="img-fluid rounded clickable-image">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="static/pet-sitting.jpg" alt="Pet Sitting" class="img-fluid rounded clickable-image">
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Services Section -->
@@ -73,25 +124,48 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
     
+    <!-- Modal for Image -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="Preview" class="img-fluid" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Add Slide-in Animation to Tabs
-        document.querySelectorAll('.nav-link').forEach(tab => {
-            tab.addEventListener('click', () => {
-                const tabContent = document.querySelector(tab.dataset.bsTarget);
-                if (tabContent) {
-                    // Remove existing animations
-                    tabContent.classList.remove('slide-in-left');
-                    // Trigger reflow to restart animation
-                    void tabContent.offsetWidth;
-                    // Add slide-in class
-                    tabContent.classList.add('slide-in-left');
-                }
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all the tab links and tab content elements
+            const tabLinks = document.querySelectorAll('.nav-link');
+            const tabContents = document.querySelectorAll('.tab-pane');
+    
+            // Listen for when a tab becomes active
+            tabLinks.forEach((link) => {
+                link.addEventListener('shown.bs.tab', (e) => {
+                    // Remove the slide-in animation class from all tab content
+                    tabContents.forEach((tabContent) => {
+                        tabContent.classList.remove('slide-in-left');
+                    });
+    
+                    // Find the currently active tab content
+                    const targetSelector = e.target.getAttribute('href');
+                    const activeTab = document.querySelector(targetSelector);
+    
+                    // Add the slide-in animation class to the active tab content
+                    activeTab.classList.add('slide-in-left');
+                });
             });
         });
-    </script>
-    
+    </script>    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
