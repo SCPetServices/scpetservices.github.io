@@ -31,7 +31,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px; /* Fixed height to maintain consistency */
+    height: 300px; /* Fixed height to maintain consistency */
     padding: 0 20px; /* Padding for better spacing on sides */
 }
 
@@ -82,26 +82,34 @@ body {
     background-color: #1d73b9; /* Blue accent for indicator buttons */
 }
 
-/* Navigation */
+/* Reduce the width of the left container */
+.smaller-nav {
+    max-width: 200px; /* Adjust width as needed */
+    margin-right: 20px;
+}
+
+/* Adjust pill sizes */
 .nav-pills .nav-link {
     font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #eaeaea;
+    color: white;
+    background-color: #2297c9;
     border-radius: 5px;
-    margin-bottom: 10px;
-    text-align: left;
+    margin-bottom: 8px; /* Reduce margin between pills */
+    padding: 8px 10px; /* Adjust padding for smaller size */
+    text-align: center; /* Align text properly */
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9rem; /* Reduce font size */
 }
 
 .nav-pills .nav-link.active {
-    background-color: #2297c9;
+    background-color: #145a8e;
     color: white;
 }
 
 .nav-pills .nav-link:hover {
     background-color: #145a8e;
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.03); /* Subtle scale effect */
 }
 
 /* Tab Content */
@@ -145,6 +153,87 @@ li {
 li:hover {
     transform: translateX(10px);
     color: #145a8e;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #145a8e !important;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #2297c9 !important; /* Hover effect */
+}
+
+/* Clickable Image Style */
+.clickable-image {
+    cursor: pointer; /* Change cursor to hand */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
+}
+
+/* Full-Screen Background Image */
+.cover-page {
+    background-image: "cover-image2.jpg"; /* Your image */
+    background-size: cover;
+    background-position: center top;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Pacifico';
+}
+
+/* Cover Page Text Style */
+.cover-page h1 {
+    font-size: 6rem;
+    font-weight: 100;
+    text-shadow: 
+        1px 1px 0px black,  /* Top-left shadow */
+        -1px -1px 0px black, /* Bottom-right shadow */
+        1px -1px 0px black,  /* Top-right shadow */
+        -1px 1px 0px black;  /* Bottom-left shadow */
+}
+
+.cover-page p {
+    font-family: 'Verdana' !important;
+    font-size: 3rem;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-shadow: 
+        1px 1px 0px black,  /* Top-left shadow */
+        -1px -1px 0px black, /* Bottom-right shadow */
+        1px -1px 0px black,  /* Top-right shadow */
+        -1px 1px 0px black;  /* Bottom-left shadow */
+}
+
+/* Button Style on Cover Page */
+.cover-page .btn-primary {
+    background-color: #2297c9;
+    color: white;
+    font-size: xx-large;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 2; /* Ensure button is above overlay */
+}
+
+.cover-page .btn-primary:hover {
+    background-color: #145a8e;
 }
 
 /* Animations */
@@ -268,15 +357,4 @@ li:hover {
     .service-item p {
         font-size: 0.9rem;
     }
-}
-
-/* Clickable Image Style */
-.clickable-image {
-    cursor: pointer; /* Change cursor to hand */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.clickable-image:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
 }
