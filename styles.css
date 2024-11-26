@@ -297,6 +297,10 @@ li:hover {
         font-size: 1.2rem;
     }
 
+    .smaller-nav {
+        width: 100%; /* Ensure nav container takes full width */
+    }
+
     .nav-pills .nav-link {
         font-size: 1rem;
         margin-bottom: 5px;
@@ -353,6 +357,10 @@ li:hover {
 
     .hero p {
         font-size: 1rem;
+    }
+
+    .smaller-nav {
+        width: 100%; /* Ensure nav container takes full width */
     }
 
     .nav-pills {
