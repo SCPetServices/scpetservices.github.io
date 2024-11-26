@@ -310,17 +310,21 @@ li:hover {
         padding: 15px;
     }
 
-    /* Ensure the tab pills are stacked horizontally */
+    /* Ensure the tab pills are displayed in a full-width layout */
     .nav-pills {
         display: flex;
-        justify-content: space-between; /* Spread out the nav pills */
+        justify-content: space-between; /* Space out the nav pills */
         flex-wrap: wrap;
+        width: 100%; /* Ensure the container takes full width */
+        padding: 0; /* Remove any padding */
     }
 
     .nav-pills .nav-link {
-        width: 100%; /* Make the tabs take full width */
-        text-align: center; /* Center align text */
-        padding: 10px;
+        width: 100%; /* Make each tab pill take full width */
+        text-align: center; /* Center text within each tab */
+        padding: 10px; /* Add padding for spacing */
+        flex-grow: 1; /* Make each tab pill stretch to fill the space */
+        margin: 0; /* Remove margin to avoid spacing between pills */
     }
 
     /* Background adjustments for tablets */
