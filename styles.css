@@ -352,20 +352,19 @@ li:hover {
     }
 
     .nav-pills {
-        text-align: center; /* Ensure it's centered */
-        display: flex; /* Use flexbox for centering */
-        flex-wrap: wrap; /* Allow items to wrap if necessary */
-        justify-content: center; /* Center the nav pills horizontally */
+        text-align: center; /* Keep text centered */
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Space out the nav pills */
+        width: 100%; /* Ensure the nav pills container takes up full width */
         padding: 0; /* Remove any default padding */
-        width: 100%; /* Make sure the nav pills take full width */
     }
 
     .nav-pills .nav-link {
-        text-align: center; /* Ensure text is centered in each pill */
+        text-align: center; /* Center text within each tab */
         font-size: 0.9rem;
-        padding: 12px 0; /* Adjust padding for easier clicking */
-        margin: 0 5px; /* Add horizontal space between pills */
-        flex-grow: 1; /* Make the pills grow to fill the width */
+        padding: 12px 0; /* Add padding for easier clicking */
+        flex-grow: 1; /* Make each tab grow to fill the full width of the container */
+        margin: 0; /* Remove margin to ensure the pills stretch fully */
     }
 
     .tab-content {
@@ -382,9 +381,9 @@ li:hover {
 
     /* Ensure the background image spans the whole screen */
     .cover-page {
-        height: 100vh; /* Keep full height on mobile */
+        height: 100vh; /* Full height on mobile */
         background-size: cover;
-        background-position: center center; /* Adjust positioning */
+        background-position: center center;
     }
 
     /* Adjust text size */
@@ -394,13 +393,13 @@ li:hover {
 
     .cover-page p {
         font-size: 1.5rem; /* Adjust the text size */
-        margin-top: 50px;  /* Adjust the top margin */
-        margin-bottom: 50px; /* Adjust the bottom margin */
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     /* Button adjustments for mobile */
     .cover-page .btn-primary {
-        font-size: 1.5rem; /* Slightly smaller button text */
-        padding: 10px 20px; /* Adjust padding for smaller devices */
+        font-size: 1.5rem;
+        padding: 10px 20px;
     }
 }
