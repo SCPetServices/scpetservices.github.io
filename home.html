@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Carlos Pet Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;500&family=Pacifico&family=Amatic+SC:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Container for Carousel and Tabs -->
+    <div class="container-fluid p-0">
+        <!-- Hero Carousel -->
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Carousel Content -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero d-flex flex-column align-items-center justify-content-center text-center">
+                        <h1><i class="fas fa-paw hero-icon me-3"></i>Welcome to SC Pet Services</h1>
+                        <p>Your trusted partner for dog walking and pet care in San Carlos. Let me treat your furry friends like family.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero d-flex flex-column align-items-center justify-content-center text-center">
+                        <h1><i class="fas fa-dog hero-icon me-3"></i>Professional Dog Walking</h1>
+                        <p>Ensure your dog gets the exercise they deserve with my experienced dog walking services.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="hero d-flex flex-column align-items-center justify-content-center text-center">
+                        <h1><i class="fas fa-shield-dog hero-icon me-3"></i>Compassionate Pet Sitting</h1>
+                        <p>Relax knowing your pet is in good hands while you're away.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Tab Content Section -->
+        <div class="row">
+            <!-- Tab Navigation (left side) -->
+            <div class="col-md-2 smaller-nav">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                    <a class="nav-link" id="v-pills-services-tab" data-bs-toggle="pill" href="#v-pills-services" role="tab" aria-controls="v-pills-services" aria-selected="false">Services</a>
+                    <a class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contact</a>
+                </div>
+            </div>
+
+
+            <!-- Tab Content (right side) -->
+            <div class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- Home Section -->
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <h2 class="text-center my-4">Welcome to SC Pet Services</h2>
+                        <p class="lead text-center">Your trusted partner for dog walking and pet care in San Carlos.</p>
+
+                        <!-- Featurette: About Me -->
+                        <div class="row featurette align-items-center my-5">
+                            <div class="col-md-6 order-md-2">
+                                <img src="static/dog-walking.jpg" alt="Dog Walking" class="img-fluid rounded shadow clickable-image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <h3 class="featurette-heading">About Me</h3>
+                                <p class="lead">I am a passionate pet lover dedicated to providing top-notch care for your furry friends. I ensure your pets are happy, healthy, and well-cared for, treating them like family.</p>
+                            </div>
+                        </div>
+
+                        <!-- Featurette: Additional Content -->
+                        <div class="row featurette align-items-center my-5">
+                            <div class="col-md-6">
+                                <img src="static/pet-sitting.jpg" alt="Pet Sitting" class="img-fluid rounded shadow clickable-image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="featurette-heading">Why Choose Me?</h3>
+                                <p class="lead">Whether it’s a walk in the park or keeping your pets company while you're away, I focus on personalized, loving care. I treat every pet as if they were my own.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services Section -->
+                    <div class="tab-pane fade" id="v-pills-services" role="tabpanel" aria-labelledby="v-pills-services-tab">
+                        <h2 class="text-center my-4">My Services</h2>
+                        <p class="lead text-center mb-5">High-quality services tailored to meet your pet's needs.</p>
+
+                        <div class="row">
+                            <!-- Service 1 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 shadow">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Daily Dog Walking</h4>
+                                        <p class="card-text"><strong>Price:</strong> $25 per walk (1 hour)</p>
+                                        <p class="card-text">Let me take your dog for a walk while you focus on your day! I ensure your dog gets the exercise and attention they need.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Service 2 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 shadow">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Pet Sitting</h4>
+                                        <p class="card-text"><strong>Price:</strong> $50 per day</p>
+                                        <p class="card-text">Whether you’re away for the day or on vacation, my pet sitting service ensures your pet is cared for in the comfort of their own home.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Service 3 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 shadow">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Grooming Assistance</h4>
+                                        <p class="card-text"><strong>Price:</strong> Starting at $40</p>
+                                        <p class="card-text">I provide assistance with basic grooming needs, such as brushing and bathing, ensuring your pet stays clean and healthy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Service 4 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 shadow">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Training Walks</h4>
+                                        <p class="card-text"><strong>Price:</strong> $35 per session</p>
+                                        <p class="card-text">Help your dog improve their behavior and learn new skills. My training walks combine training and exercise to help your dog learn while having fun!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Section -->
+                    <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">
+                        <h2 class="text-center my-4">Contact Me</h2>
+                        <p class="lead text-center mb-5">Have questions or want to schedule a service? I’d love to hear from you!</p>
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="card shadow">
+                                    <div class="card-body text-center">
+                                        <p><i class="fas fa-envelope me-2"></i><strong>Email:</strong> <a href="mailto:info@sancarlospetservices.com">info@sancarlospetservices.com</a></p>
+                                        <p><i class="fas fa-phone me-2"></i><strong>Phone:</strong> (123) 456-7890</p>
+                                        <p><i class="fas fa-map-marker-alt me-2"></i><strong>Location:</strong> San Carlos, CA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+    
+    <!-- Modal for Image -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="Preview" class="img-fluid" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add event listener to all clickable images
+        document.querySelectorAll('.clickable-image').forEach(image => {
+            image.addEventListener('click', function () {
+                const modalImage = document.getElementById('modalImage');
+                modalImage.src = this.src; // Set the clicked image's src to the modal image
+            });
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all the tab links and tab content elements
+            const tabLinks = document.querySelectorAll('.nav-link');
+            const tabContents = document.querySelectorAll('.tab-pane');
+    
+            // Listen for when a tab becomes active
+            tabLinks.forEach((link) => {
+                link.addEventListener('shown.bs.tab', (e) => {
+                    // Remove the slide-in animation class from all tab content
+                    tabContents.forEach((tabContent) => {
+                        tabContent.classList.remove('slide-in-left');
+                    });
+    
+                    // Find the currently active tab content
+                    const targetSelector = e.target.getAttribute('href');
+                    const activeTab = document.querySelector(targetSelector);
+    
+                    // Add the slide-in animation class to the active tab content
+                    activeTab.classList.add('slide-in-left');
+                });
+            });
+        });
+    </script>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2024 SC Pet Services | All rights reserved.</p>
+        <p>
+            <a href="mailto:info@sancarlospetservices.com" class="text-white me-3">Email Us</a>|
+            <a href="tel:+15555555555" class="text-white ms-3">Call Us</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
