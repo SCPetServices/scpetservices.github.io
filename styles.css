@@ -21,33 +21,65 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to bottom right, #2297c9, #145a8e);
+    background: linear-gradient(to bottom right, #2297c9, #145a8e); /* Gradient for added depth */
     color: white;
-    padding: 60px 20px;
     text-align: center;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border-bottom: 2.5px solid black !important;
+    border-radius: 12px; /* Slightly more rounded corners */
+    margin-bottom: 30px; /* Increased bottom margin for better spacing */
+    border-bottom: 2.5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Fixed height to maintain consistency */
+    padding: 0 20px; /* Padding for better spacing on sides */
 }
 
+.carousel-item .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hero Heading */
 .hero h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 3rem;
+    font-size: 3.5rem; /* Increased font size for more prominence */
     margin-bottom: 20px;
     animation: fadeInDown 1.2s;
+    line-height: 1.2; /* Better line spacing */
 }
 
+/* Hero Paragraph */
 .hero p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem; /* Slightly larger font size for readability */
     margin-bottom: 20px;
     animation: fadeIn 1.5s;
+    line-height: 1.5; /* Spacing between lines */
+    max-width: 800px; /* Prevent text from stretching too wide on larger screens */
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Hero Icon */
 .hero-icon {
-    font-size: 3rem;
+    font-size: 4rem; /* Slightly larger icon for emphasis */
     color: white;
     animation: bounce 1.5s infinite;
+}
+
+/* Adjust carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #1d73b9; /* Blue accent for control icons */
+}
+
+/* Optional: Styling for carousel indicators */
+.carousel-indicators button {
+    background-color: #1d73b9; /* Blue accent for indicator buttons */
 }
 
 /* Navigation */
@@ -148,6 +180,16 @@ li:hover {
     }
 }
 
+/* Slow Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 /* Add a reusable class for the animation */
 .slide-in-left {
     animation: slideInFromLeft .6s ease-out;
@@ -163,7 +205,7 @@ li:hover {
     }
 
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .nav-pills .nav-link {
@@ -226,4 +268,15 @@ li:hover {
     .service-item p {
         font-size: 0.9rem;
     }
+}
+
+/* Clickable Image Style */
+.clickable-image {
+    cursor: pointer; /* Change cursor to hand */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
 }
