@@ -185,7 +185,7 @@ li:hover {
 
 /* Full-Screen Background Image */
 .cover-page {
-    background-image: "cover-image2.jpg"; /* Your image */
+    background-image: url('cover-image2.jpg'); /* Your image */
     background-size: cover;
     background-position: center top;
     height: 100vh; /* Full viewport height */
