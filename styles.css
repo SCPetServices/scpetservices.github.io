@@ -1,7 +1,7 @@
 /* General Style */
 @font-face {
     font-family: 'CustomFont';
-    src: url('fonts/StyleScript-Regular.ttf') format('truetype');
+    src: url('StyleScript-Regular.ttf') format('truetype');
 }
 
 body {
