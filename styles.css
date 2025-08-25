@@ -1,7 +1,12 @@
 /* General Style */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/StyleScript-Regular.ttf') format('truetype');
+}
+
 body {
     font-family: 'Poppins', sans-serif, 'Arial', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #fdf6e3; /* Very light tan */
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,30 +14,30 @@ body {
 }
 
 .site-title {
-    font-family: 'Bree Serif', serif;
+    font-family: 'CustomFont', sans-serif;
     font-size: 2.5rem;
-    color: #2297c9;
+    color: #8aa588; /* Sage green */
 }
 
 .site-title .fas {
-    color: #2297c9;
+    color: #8aa588;
     margin-right: 8px;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to bottom right, #2297c9, #145a8e); /* Gradient for added depth */
-    color: white;
+    background: linear-gradient(to bottom right, #8aa588, #6b8b6b); /* Gradient sage green */
+    color: black;
     text-align: center;
-    border-radius: 12px; /* Slightly more rounded corners */
-    margin-bottom: 30px; /* Increased bottom margin for better spacing */
-    border-bottom: 2.5px solid black;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-bottom: 2.5px solid #5a755a;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px; /* Fixed height to maintain consistency */
-    padding: 0 20px; /* Padding for better spacing on sides */
+    height: 300px;
+    padding: 0 20px;
 }
 
 .carousel-item .hero {
@@ -45,76 +50,76 @@ body {
 
 /* Hero Heading */
 .hero h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 3.5rem; /* Increased font size for more prominence */
+    font-family: 'CustomFont', sans-serif;
+    font-size: 5rem;
     margin-bottom: 20px;
     animation: fadeInDown 1.2s;
-    line-height: 1.2; /* Better line spacing */
+    line-height: 1.2;
 }
 
 /* Hero Paragraph */
 .hero p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem; /* Slightly larger font size for readability */
+    font-size: 1.3rem;
     margin-bottom: 20px;
     animation: fadeIn 1.5s;
-    line-height: 1.5; /* Spacing between lines */
-    max-width: 800px; /* Prevent text from stretching too wide on larger screens */
+    line-height: 1.5;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Hero Icon */
 .hero-icon {
-    font-size: 4rem; /* Slightly larger icon for emphasis */
-    color: white;
+    font-size: 4rem;
+    color: black;
     animation: bounce 1.5s infinite;
 }
 
 /* Adjust carousel control icons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #1d73b9; /* Blue accent for control icons */
+    background-color: #6b8b6b; /* Sage accent */
 }
 
 /* Optional: Styling for carousel indicators */
 .carousel-indicators button {
-    background-color: #1d73b9; /* Blue accent for indicator buttons */
+    background-color: #6b8b6b; /* Sage accent */
 }
 
 /* Reduce the width of the left container */
 .smaller-nav {
-    max-width: 200px; /* Adjust width as needed */
+    max-width: 200px;
     margin-right: 20px;
 }
 
 /* Adjust pill sizes */
 .nav-pills .nav-link {
     font-family: 'Roboto', sans-serif;
-    color: white;
-    background-color: #2297c9;
+    color: black;
+    background-color: #8aa588;
     border-radius: 5px;
-    margin-bottom: 8px; /* Reduce margin between pills */
-    padding: 8px 10px; /* Adjust padding for smaller size */
-    text-align: center; /* Align text properly */
+    margin-bottom: 8px;
+    padding: 8px 10px;
+    text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 0.9rem; /* Reduce font size */
+    font-size: 0.9rem;
 }
 
 .nav-pills .nav-link.active {
-    background-color: #145a8e;
-    color: white;
+    background-color: #6b8b6b;
+    color: #8aa588;
 }
 
 .nav-pills .nav-link:hover {
-    background-color: #145a8e;
-    color: white;
-    transform: scale(1.03); /* Subtle scale effect */
+    background-color: #6b8b6b;
+    color: black;
+    transform: scale(1.03);
 }
 
 /* Tab Content */
-.tab-content {
-    background: white;
+.tab-content, .card-body {
+    background: #fdf6e3; /* Light tan background */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -123,18 +128,18 @@ body {
 
 /* Headers */
 h2, h3 {
-    font-family: 'Bree Serif', serif;
-    color: #2297c9;
+    font-family: 'CustomFont', sans-serif;
+    color: #8aa588;
     margin-bottom: 15px;
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
 }
 
 h4 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'CustomFont', sans-serif;
     color: black;
     text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -152,49 +157,60 @@ li {
 
 li:hover {
     transform: translateX(10px);
-    color: #145a8e;
+    color: #6b8b6b;
 }
 
 /* Footer Styles */
 .footer {
-    background-color: #145a8e !important;
-    color: white;
+    background-color: #6b8b6b !important;
+    color: black !important;
     text-align: center;
 }
 
 .footer a {
-    color: #ffffff;
+    color: black !important;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer a:hover {
-    color: #2297c9 !important; /* Hover effect */
+    color: #8aa588 !important;
 }
 
 /* Clickable Image Style */
 .clickable-image {
-    cursor: pointer; /* Change cursor to hand */
+    cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .clickable-image:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Full-Screen Background Image */
 .cover-page {
-    background-image: url('cover-image2.jpg'); /* Your image */
+    background-image: url('pics/three_dogs.jpg');
     background-size: cover;
-    background-position: center top;
-    height: 100vh; /* Full viewport height */
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-    font-family: 'Pacifico';
+    font-family: 'CustomFont', sans-serif;
+    overflow: hidden;
+}
+
+.cover-page h1,
+.cover-page p {
+    margin: 0;
+    padding: 0;
 }
 
 /* Cover Page Text Style */
@@ -202,10 +218,14 @@ li:hover {
     font-size: 6rem;
     font-weight: 100;
     text-shadow: 
-        1px 1px 0px black,  /* Top-left shadow */
-        -1px -1px 0px black, /* Bottom-right shadow */
-        1px -1px 0px black,  /* Top-right shadow */
-        -1px 1px 0px black;  /* Bottom-left shadow */
+        2px 2px 0px black,  
+        -2px -2px 0px black, 
+        2px -2px 0px black,  
+        -2px 2px 0px black,
+        1px 0px 0px black,
+        0px 1px 0px black,
+        -1px 0px 0px black,
+        0px -1px 0px black;
 }
 
 .cover-page p {
@@ -214,208 +234,91 @@ li:hover {
     margin-top: 150px;
     margin-bottom: 150px;
     text-shadow: 
-        1px 1px 0px black,  /* Top-left shadow */
-        -1px -1px 0px black, /* Bottom-right shadow */
-        1px -1px 0px black,  /* Top-right shadow */
-        -1px 1px 0px black;  /* Bottom-left shadow */
+        2px 2px 0px black,  
+        -2px -2px 0px black, 
+        2px -2px 0px black,  
+        -2px 2px 0px black,
+        1px 0px 0px black,
+        0px 1px 0px black,
+        -1px 0px 0px black,
+        0px -1px 0px black;
 }
 
 /* Button Style on Cover Page */
 .cover-page .btn-primary {
-    background-color: #2297c9;
+    background-color: #8aa588;
     color: white;
     font-size: xx-large;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    z-index: 2; /* Ensure button is above overlay */
+    z-index: 2;
+    text-shadow: 
+        1px 1px 0px black,
+        -1px 1px 0px black,
+        1px -1px 0px black,
+        -1px -1px 0px black; /* Thin black outline around text */
 }
 
 .cover-page .btn-primary:hover {
-    background-color: #145a8e;
+    background-color: #6b8b6b;
 }
 
 /* Animations */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-/* Slide In From Left */
 @keyframes slideInFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    from { opacity: 0; transform: translateX(-100%); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
-/* Slow Bounce Animation */
 @keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
-/* Add a reusable class for the animation */
 .slide-in-left {
     animation: slideInFromLeft .6s ease-out;
 }
 
-/* Media Queries for smaller screens */
+/* Media Queries */
 
 /* Tablets */
 @media (max-width: 768px) {
-    /* Hero section adjustments for smaller screens */
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
-    .smaller-nav {
-        width: 100% !important; /* Ensure nav container takes full width */
-        max-width: none !important; /* Remove any max-width restrictions */
-        margin-right: 0 !important; /* Reset any margin on smaller screens */
-    }
-
-    .nav-pills .nav-link {
-        font-size: 1rem;
-        margin-bottom: 5px;
-    }
-
-    .site-title {
-        font-size: 2rem;
-    }
-
-    .tab-content {
-        padding: 15px;
-    }
-
-    /* Ensure the tab pills are displayed in a full-width layout */
-    .nav-pills {
-        display: flex;
-        justify-content: space-between; /* Space out the nav pills */
-        flex-wrap: wrap;
-        width: 100%; /* Ensure the container takes full width */
-        padding: 0; /* Remove any padding */
-    }
-
-    .nav-pills .nav-link {
-        width: 100%; /* Make each tab pill take full width */
-        text-align: center; /* Center text within each tab */
-        padding: 10px; /* Add padding for spacing */
-        flex-grow: 1; /* Make each tab pill stretch to fill the space */
-        margin: 0; /* Remove margin to avoid spacing between pills */
-    }
-
-    /* Background adjustments for tablets */
-    .cover-page {
-        background-size: cover;
-        background-position: center top;
-        height: 80vh; /* Adjust height for tablets */
-    }
-
-    .cover-page h1 {
-        font-size: 4.5rem; /* Adjust header size */
-    }
-
-    .cover-page p {
-        font-size: 2rem; /* Adjust the paragraph size */
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { font-size: 1.2rem; }
+    .smaller-nav { width: 100% !important; max-width: none !important; margin-right: 0 !important; }
+    .nav-pills .nav-link { font-size: 1rem; margin-bottom: 5px; }
+    .site-title { font-size: 2rem; }
+    .tab-content { padding: 15px; }
+    .nav-pills { display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; padding: 0; }
+    .nav-pills .nav-link { width: 100%; text-align: center; padding: 10px; flex-grow: 1; margin: 0; }
+    .cover-page { background-size: cover; background-position: center top; height: 80vh; }
+    .cover-page h1 { font-size: 4.5rem; }
+    .cover-page p { font-size: 2rem; margin-top: 100px; margin-bottom: 100px; }
 }
 
 /* Mobile Devices */
 @media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .smaller-nav {
-        width: 100% !important; /* Ensure nav container takes full width */
-        max-width: none !important; /* Remove any max-width restrictions */
-        margin-right: 0 !important; /* Reset any margin on smaller screens */
-    }
-
-    .nav-pills {
-        text-align: center; /* Keep text centered */
-        display: flex; /* Use flexbox for layout */
-        justify-content: space-between; /* Space out the nav pills */
-        width: 100%; /* Ensure the nav pills container takes up full width */
-        padding: 0; /* Remove any default padding */
-    }
-
-    .nav-pills .nav-link {
-        text-align: center; /* Center text within each tab */
-        font-size: 0.9rem;
-        padding: 12px 0; /* Add padding for easier clicking */
-        flex-grow: 1; /* Make each tab grow to fill the full width of the container */
-        margin: 0; /* Remove margin to ensure the pills stretch fully */
-    }
-
-    .tab-content {
-        padding: 10px;
-    }
-
-    .service-item h4 {
-        font-size: 1.2rem;
-    }
-
-    .service-item p {
-        font-size: 0.9rem;
-    }
-
-    /* Ensure the background image spans the whole screen */
-    .cover-page {
-        height: 100vh; /* Full height on mobile */
-        background-size: cover;
-        background-position: center center;
-    }
-
-    /* Adjust text size */
-    .cover-page h1 {
-        font-size: 3rem; /* Smaller font for smaller screens */
-    }
-
-    .cover-page p {
-        font-size: 1.5rem; /* Adjust the text size */
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    /* Button adjustments for mobile */
-    .cover-page .btn-primary {
-        font-size: 1.5rem;
-        padding: 10px 20px;
-    }
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1rem; }
+    .smaller-nav { width: 100% !important; max-width: none !important; margin-right: 0 !important; }
+    .nav-pills { text-align: center; display: flex; justify-content: space-between; width: 100%; padding: 0; }
+    .nav-pills .nav-link { text-align: center; font-size: 0.9rem; padding: 12px 0; flex-grow: 1; margin: 0; }
+    .tab-content { padding: 10px; }
+    .service-item h4 { font-size: 1.2rem; }
+    .service-item p { font-size: 0.9rem; }
+    .cover-page { height: 100vh; background-size: cover; background-position: center center; }
+    .cover-page h1 { font-size: 3rem; }
+    .cover-page p { font-size: 1.5rem; margin-top: 50px; margin-bottom: 50px; }
+    .cover-page .btn-primary { font-size: 1.5rem; padding: 10px 20px; }
 }
