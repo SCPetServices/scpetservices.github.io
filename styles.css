@@ -190,7 +190,7 @@ li:hover {
 
 /* Full-Screen Background Image */
 .cover-page {
-    background-image: url('pics/three_dogs.jpg');
+    background-image: url('three_dogs.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
