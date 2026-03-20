@@ -217,6 +217,8 @@ li:hover {
 .cover-page h1 {
     font-size: 6rem;
     font-weight: 100;
+    margin-top: 200px;
+    margin-bottom: 150px;
     text-shadow: 
         2px 2px 0px black,  
         -2px -2px 0px black, 
