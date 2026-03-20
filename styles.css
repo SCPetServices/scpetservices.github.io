@@ -216,6 +216,7 @@ li:hover {
 /* Cover Page Text Style */
 .cover-page h1 {
     font-size: 6rem;
+    margin-top: 25px;
     font-weight: 100;
     text-shadow: 
         2px 2px 0px black,  
@@ -231,7 +232,7 @@ li:hover {
 .cover-page p {
     font-family: 'Verdana' !important;
     font-size: 3rem;
-    margin-top: 150px;
+    margin-top: 175px;
     margin-bottom: 150px;
     text-shadow: 
         2px 2px 0px black,  
